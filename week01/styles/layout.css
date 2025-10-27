@@ -1,0 +1,47 @@
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* Main is 3x wider than aside */
+  height: 500px;
+}
+
+main{
+    background-color: rgb(128, 126, 126);
+    
+}
+
+aside{
+    background-color: rgb(235, 231, 231);
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    font-size: large;
+    background-color: black;
+}
+
+a{
+    color: white ;
+}
+
+p{
+    background-color:  rgb(128, 126, 126);
+    padding: 2rem 1rem;
+    margin-bottom: 0%;
+    font-size: large;
+    background-color: rgb(51, 50, 50);
+    color: white;
+   
+}
+
+footer{
+    background-color: rgb(51, 50, 50);
+    margin-top: 0%;
+    padding: 4rem ;
+    color: white;
+    text-align: center;
+
+}
+
