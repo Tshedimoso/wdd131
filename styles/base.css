@@ -1,11 +1,13 @@
 *{
     padding: 0;
     margin: 0;
+    
+}
+
+header, main, footer{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
-
-
 #course-title{
     display: block;
 	text-align: center;
