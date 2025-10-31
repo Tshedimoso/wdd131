@@ -37,3 +37,8 @@ nav{
     text-decoration: none;
     text-align: center;
 }
+
+.navigation a:hover {
+	font-weight: 700;
+	color:  rgb(0 110 182 / 1);
+}
