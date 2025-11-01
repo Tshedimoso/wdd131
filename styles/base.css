@@ -14,16 +14,11 @@ header{
 main{
      font-family: "Roboto", sans-serif;
     font-weight: 400;
-    max-width: 90vw;
+    max-width: 88vw;
     margin: 0 auto;
 }
 
-footer{
-     font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    max-width: 90vw;
-    margin: 0 auto;
-}
+
 
 #course-title{
     display: block;
@@ -67,7 +62,6 @@ nav{
     display: grid;
     grid-template-columns: 2fr 1fr; 
     gap: 10px;
-    max-width: 88vw;
     margin: 0 auto;
 
 }
@@ -80,8 +74,56 @@ nav{
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1{
+.card-header{
+    background-color: rgb(0 110 182 / 1);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+h1 , h2{
     text-align: center;
     margin: 20px;
+}
+
+.city-name{
+    border-bottom: 1px solid #000;
+    width: 480px;
+}
+
+.profile-pic{
+    float: right;
+    width: 150px;
+    height: 200px;
+    padding: 3px;
+}
+
+.city{
+    float: left;
+    width: 150px;
+    height: 190px;
+    padding: 3px;
+}
+
+
+p{
+    padding: 10px;
+    word-spacing: 5px;
+}
+
+
+
+
+
+footer{
+     font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    max-width: 90vw;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
 }
 
