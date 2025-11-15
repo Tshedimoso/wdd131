@@ -1,6 +1,4 @@
-/* Larger view styles - applied after temples.css */
 @media screen and (min-width: 640px) {
-/* Show nav inline and hide hamburger */
 .hamburger { display: none; }
 nav {
 position: static;
@@ -22,7 +20,6 @@ main { padding: 0; }
 
 .gallery {
 display: grid;
-/* responsive multi-column layout using repeat/auto-fit/minmax */
 grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 gap: 1rem;
 }
