@@ -1,3 +1,15 @@
+header {
+background: #edb610;
+border-bottom: 1rem solid #0A2E6F;
+padding: 0.5rem 1rem;
+}
+
+h1{
+    color: white;
+    font-size:xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
 footer {
 
 margin: 1rem auto;
