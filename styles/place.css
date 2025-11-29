@@ -5,7 +5,7 @@
 }
 :root {
   --primary: #0A2E6F;
-  --accent: #edb610;;
+  --accent: rgb(225, 211, 211);
   --text: #222;
   --white: #fff;
   --max-width: 900px;
@@ -37,6 +37,7 @@ h1{
   padding: var(--padding);
   border-radius: 10px;
   margin-top: 1rem;
+  background:  rgb(210, 206, 206);
 }
 
 .weather-icon-mobile {
@@ -52,7 +53,6 @@ h1{
 .data {
   margin-top: 1rem;
   padding: var(--padding);
-  border-left: 5px solid var(--primary);
   background: #f5f7fa;
 }
 
