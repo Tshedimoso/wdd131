@@ -3,6 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primary: #1b365d;
+  --accent: #c7e1ff;
+  --text: #222;
+  --white: #fff;
+  --max-width: 900px;
+  --padding: 1rem;
+  --heading-font: Arial, sans-serif;
+}
 
 header {
 background: #edb610;
