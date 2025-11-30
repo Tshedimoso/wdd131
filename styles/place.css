@@ -52,6 +52,9 @@ h1 {
   padding: var(--padding);
   background: #f5f7fa;
   border-radius: 10px;
+  background: rgb(210, 206, 206);
+  opacity:0.7;
+
 }
 
 
