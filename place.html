@@ -4,8 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gauteng Page</title>
-<meta name="description" content="This page shows data of the province that i live in,Gauteng.It showcases my proficiency with JavaScript syntax and my use of valid HTML and CSS.">
+
+<meta name="description" content="This page shows data of the province that I live in, Gauteng. It showcases my proficiency with JavaScript syntax and my use of valid HTML and CSS.">
 <meta name="author" content="Tshedimoso Segona">
+
 <link rel="stylesheet" href="styles/place.css">
 <script defer src="scripts/place.js"></script>
 </head>
@@ -16,43 +18,42 @@
     </header>
 
     <main>
+
         <section class="hero">
+            <h2 class="visually-hidden">Image of lions</h2>
             <img 
-            src="images/lions.webp" 
-            srcset="images/lions.webp 600w, images/lions.webp 1200w"
-            sizes="(max-width: 600px) 600px, 1200px"
-            alt="Lions sitting on the grass">
+                src="images/lions.webp" 
+                srcset="images/lions.webp 600w, images/lions.webp 1200w"
+                sizes="(max-width: 600px) 600px, 1200px"
+                alt="Lions sitting on the grass">
         </section>
 
         <section class="data">
-            <h2>Data</h2>
-            <p><strong>Area:</strong> <span id="temp">18,178</span> sq km</p>
-            <p><strong>Population:</strong> <span id="wind">16,098,571</span> km/h</p>
-            <p><strong>Capital:</strong> <span id="windchill">Johannesburg</span> °C</p>
-            <p><strong>Language:</strong> <span id="temp">isiZulu, English, Afrikaans, Sesotho, etc.</span></p>
-            <p><strong>Currency:</strong> <span id="wind">Rands</span></p>
-            <p><strong>Time Zone:</strong> <span id="windchill">UTC+2</span></p>
-            <p><strong>Calling Code:</strong> <span id="temp">+27</span></p>
-            <p><strong>Internet TLD:</strong> <span id="wind">.mg</span></p>
+            <h2>Province Data</h2>
+            <p><strong>Area:</strong> <span>18,178</span> sq km</p>
+            <p><strong>Population:</strong> <span>16,098,571</span></p>
+            <p><strong>Capital:</strong> <span>Johannesburg</span></p>
+            <p><strong>Languages:</strong> <span>isiZulu, English, Afrikaans, Sesotho, etc.</span></p>
+            <p><strong>Currency:</strong> <span>Rand (ZAR)</span></p>
+            <p><strong>Time Zone:</strong> <span>UTC+2</span></p>
+            <p><strong>Calling Code:</strong> <span>+27</span></p>
+            <p><strong>Internet TLD:</strong> <span>.za</span></p>
         </section>
 
-    
         <section class="weather">
             <h2 class="weather-heading">Weather</h2>
 
-            
             <img src="images/cloud.svg" alt="cloud icon" class="weather-icon-mobile">
 
-            <p><strong>Temperature:</strong> <span id="temp">4</span> °C</p>
-            <p><strong>Wind Speed:</strong> <span id="wind">12</span> km/h</p>
-            <p><strong>Wind Chill:</strong> <span id="windchill">9.8</span> °C</p>
+            <p><strong>Temperature:</strong> <span id="temp-value">4</span> °C</p>
+            <p><strong>Wind Speed:</strong> <span id="wind-value">12</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill-value">9.8</span> °C</p>
         </section>
-
 
     </main>
 
     <footer>
-        <p>© <span id="currentyear"></span> ✨Tshedimoso Segona✨ Gauteng</p>
+        <p>© <span id="currentyear"></span> ✨ Tshedimoso Segona ✨ Gauteng</p>
         <p><span id="lastModified"></span></p>
     </footer>
 
