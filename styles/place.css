@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +6,13 @@
 
 :root {
   --primary: #0A2E6F;
-  --accent: #e1d3d3;
-  --text: #222;
-  --white: #fff;
+  --accent: #E1D3D3;
+  --text: #222222;
+  --white: #FFFFFF;
   --max-width: 900px;
   --padding: 1rem;
   --heading-font: Arial, sans-serif;
 }
-
 
 body {
   font-family: var(--heading-font);
@@ -25,9 +23,8 @@ body {
   padding: var(--padding);
 }
 
-
 header {
-  background: #edb610;
+  background: #EDB610;
   border-bottom: 1rem solid var(--primary);
   padding: 2rem;
   text-align: center;
@@ -39,18 +36,17 @@ h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
 .hero img {
   width: 100%;
   display: block;
-  
 }
+
 .hero-grid {
   display: block;
 }
 
 .card {
-  background: #f5f7fa;
+  background: #F5F7FA;
   padding: var(--padding);
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
@@ -59,16 +55,14 @@ h1 {
   margin-top: 1rem;
   padding: var(--padding);
   background: #D2CECE;
-  opacity:0.7;
-
+  opacity: 0.7;
 }
-
 
 .weather {
   background: #D2CECE;
   padding: var(--padding);
   margin-top: 1rem;
-  opacity:0.7;
+  opacity: 0.7;
 }
 
 .weather-icon-mobile {
@@ -93,10 +87,8 @@ h1 {
   border: 0;
 }
 
-
 footer {
-  
-  background-color: #edb610;
+  background-color: #EDB610;
   text-align: center;
   color: var(--white);
   font-family: "Roboto", sans-serif;
@@ -106,15 +98,14 @@ footer {
   color: var(--primary);
 }
 
-
 @media (min-width: 700px) {
- .card {
-  background: #f5f7fa;
-  padding: var(--padding);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}}
+  .card {
+    background: #F5F7FA;
+    padding: var(--padding);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+}
 
-/* Desktop layout: layer data + weather over the hero */
 @media (min-width: 900px) {
 
   .hero-grid {
@@ -147,16 +138,15 @@ footer {
     grid-column: 1 / 2;
     grid-row: 1;
     margin: 2rem;
-    float:left;
+    float: left;
   }
 
   .weather {
     grid-column: 2 / 3;
     grid-row: 1;
     margin: 2rem;
-    
   }
-  
+
   .weather-icon-mobile {
     display: none;
   }
