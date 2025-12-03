@@ -49,5 +49,15 @@ input[type="submit"]:hover {
 background: #555;
 }
 .rating-group label {
-display: block;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 600px) {
+  .review-form {
+    padding: 1rem;
+  }
+  input, select, textarea {
+    font-size: .9rem;
+  }
 }
