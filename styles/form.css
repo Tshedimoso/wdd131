@@ -64,4 +64,10 @@ gap: 1rem;
   input, select, textarea {
     font-size: .9rem;
   }
+
+  .rating-group {
+    display: block;
+    
+}
+
 }
