@@ -1,0 +1,90 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Review Form</title>
+<meta name="description" content="Product review form page that includes a submission confirmation with a counter. In addition, the form is user friendly on both mobile and desktop screens.">
+<meta name="author" content="Tshedimoso Segona">
+<link rel="stylesheet" href="styles/form.css">
+<script defer src="scripts/form.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="review-form">
+
+
+            <div class="form-group">
+                <label for="product">Product Name <span class="required">*</span></label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <fieldset>
+                    <legend>Overall Rating <span class="required">*</span></legend>
+                    <div class="rating-group">
+                        <label><input type="radio" id="rating1" name="rating" value="1" required> ☆</label>
+                        <label><input type="radio" id="rating2" name="rating" value="2"> ☆☆</label>
+                        <label><input type="radio" id="rating3" name="rating" value="3"> ☆☆☆</label>
+                        <label><input type="radio" id="rating4" name="rating" value="4"> ☆☆☆☆</label>
+                        <label><input type="radio" id="rating5" name="rating" value="5"> ☆☆☆☆☆</label>
+                    </div>
+                </fieldset>
+            </div>
+
+
+            <div class="form-group">
+                <label for="installDate">Date of Installation <span class="required">*</span></label>
+                <input type="date" id="installDate" name="installDate" required>
+            </div>
+
+
+            <div class="form-group">
+                <fieldset>
+                    <legend>Useful Features</legend>
+                    <p>Which features did you find useful in the product?<br>(Check all that apply)</p>
+                    <label><input type="checkbox" id="feature1" name="features" value="durability"> Durability</label>
+                    <label><input type="checkbox" id="feature2" name="features" value="design"> Design</label>
+                    <label><input type="checkbox" id="feature3" name="features" value="performance"> Performance</label>
+                    <label><input type="checkbox" id="feature4" name="features" value="performance"> Ease of Use</label>
+
+                </fieldset>
+            </div>
+
+
+            <div class="form-group">
+                <label for="reviewText">Written Review (Optional)</label>
+                <textarea id="reviewText" name="reviewText" rows="5"></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <label for="username">User Name(Optional)</label>
+                <input type="text" id="username" name="username">
+            </div>
+
+
+                <div class="form-group">
+                    <input type="submit" value="Submit Review" />
+                </div>
+        </form>
+    </main>
+
+
+    <footer>
+        <p>© <span id="currentyear"></span> ✨ Tshedimoso Segona ✨ Gauteng</p>
+        <p>Last Modification : <span id="lastModified"></span></p>
+    </footer>
+
+
+
+</body>
+</html>

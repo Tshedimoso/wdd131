@@ -1,0 +1,53 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background: #f4f4f4;
+color: #222;
+}
+header, footer {
+background: #333;
+color: #fff;
+text-align: center;
+padding: 1rem;
+}
+main {
+padding: 1rem;
+max-width: 600px;
+margin: auto;
+}
+.review-form {
+background: #fff;
+padding: 1.5rem;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.form-group {
+margin-bottom: 1rem;
+display: flex;
+flex-direction: column;
+}
+label, legend {
+font-weight: bold;
+margin-bottom: .25rem;
+}
+.required {
+color: red;
+}
+input, select, textarea {
+padding: .5rem;
+font-size: 1rem;
+}
+input[type="submit"] {
+background: #333;
+color: #fff;
+border: none;
+padding: .75rem;
+cursor: pointer;
+}
+input[type="submit"]:hover {
+background: #555;
+}
+.rating-group label {
+display: block;
+}
