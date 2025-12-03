@@ -48,26 +48,39 @@ cursor: pointer;
 input[type="submit"]:hover {
 background: #555;
 }
-.rating-group label {
-    display: flex;
-    align-items: center;
-}
+
 .rating-group {
 display: flex;
-gap: 1rem;
+gap: 4rem;
+}
+
+
+.rating-group label {
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 1.2rem
 }
 
 @media (max-width: 600px) {
-  .review-form {
+    .review-form {
     padding: 1rem;
-  }
-  input, select, textarea {
+    }
+    input, select, textarea {
     font-size: .9rem;
-  }
+    }
 
-  .rating-group {
-    display: block;
-    
-}
+    .rating-group {
+        display: flex;
+        gap: 1rem;
+    }
+
+
+    .rating-group label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2rem
+    }
 
 }
