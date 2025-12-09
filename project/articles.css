@@ -1,0 +1,154 @@
+
+.artists-directory {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.artists-directory h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.artists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 30px;
+    justify-items: center;
+}
+
+.artist-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    min-height: 550px;
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.artist-cards {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    min-height: 450px; 
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.artist-cards img {
+    width: 100%;
+    height: auto;
+    max-height: 1000px; 
+    object-fit: cover; 
+    margin-bottom: 5px;
+}
+
+.artist-cards h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;}
+
+.artist-card img {
+    width: 100%;
+    height: auto;
+    max-height: 600px; 
+    object-fit: cover; 
+    margin-bottom: 15px;
+}
+
+.artist-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.artist-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+}
+
+.read-more-btn {
+    font-size: 1rem;
+    color: #f39c12;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+}
+
+.read-more-btn:hover {
+    text-decoration: underline;
+}
+
+.view-profile-btn {
+    background-color: #9d0620;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-top: auto;
+}
+
+.view-profile-btn:hover {
+    background-color:#0056b3;
+}
+
+
+.image-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+
+.slider-images {
+    display: flex;
+    
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; 
+}
+
+.slider-images::-webkit-scrollbar {
+    display: none; 
+}
+
+
+.slider-images img {
+    flex: 0 0 auto;
+    width: 330px;
+    height: 400px;
+    
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+  
+
+
+
+
+
+
+
+
