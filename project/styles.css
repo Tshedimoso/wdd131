@@ -10,7 +10,6 @@ header {
     padding: 20px;
     background-color: #222;
     color: #fff;
-    
 }
 
 header .logo {
@@ -18,24 +17,15 @@ header .logo {
     font-weight: bold;
 }
 
+.logo{
+    color: #0056b3;
+}
+
 nav ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    
-}
-
-.view-profile-btn{
-    display: inline-block;
-    background-color:#9d0620;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    margin-top: 30px;
-    
 }
 
 nav ul li {
@@ -45,7 +35,6 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    
 }
 
 .search-bar input {
@@ -54,29 +43,33 @@ nav ul li a {
 }
 
 .hero {
-    background: url('logo3.jpg') no-repeat center center;
-    background-size: cover;
+    background: url('logo3.jpg') center/cover no-repeat;
     text-align: center;
-    padding: 80px 0;
+    padding: 300px 0;
     color: #80d3f7;
-    
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero .cta-btn {
-    margin: 10px;
-    padding: 10px 20px;
+.cta-btn, .view-profile-btn {
+    display: inline-block;
     background-color: #9d0620;
-    color: #fdfdfe;
-    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
     border-radius: 5px;
-    
-  
+    text-decoration: none;
+}
 
+.cta-btn {
+    padding: 20px 40px;
+    margin: 10px;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.view-profile-btn:hover {
+    background-color: #555;
 }
 
 .featured {
@@ -85,27 +78,41 @@ nav ul li a {
     background-color: #f9f9f9;
 }
 
-.featured h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
+.carousel-container {
+    overflow-x: auto;
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
 }
 
 .carousel {
     display: flex;
-    justify-content: space-around;
+    gap: 20px;
 }
 
-
+.artist-card {
+    width: 250px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
 
 .artist-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-}
-
-.artist-card h3, .artist-card p {
-    margin: 10px;
-    color: #102025;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .artist-card:hover {
@@ -120,185 +127,63 @@ footer {
     text-align: center;
 }
 
-footer .footer-links ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-
-footer .footer-links ul li {
-    margin: 0 15px;
-}
-
-footer .footer-links ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer .newsletter {
-    margin-top: 20px;
-}
-
-footer .newsletter input {
-    padding: 10px;
-    width: 200px;
-    border-radius: 5px;
-    border: none;
-}
-
-footer .newsletter button {
+footer button {
     padding: 10px 20px;
     background-color: #9d0620;
-    color: #fff;
     border: none;
     border-radius: 5px;
+    color: #fff;
     cursor: pointer;
 }
-.logo {
-    font-size: 36px;
-    font-weight: bold;
-    color: #0000ff;
-}
 
-.featured {
-    text-align: center;
-    margin-bottom: 40px;
+footer button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
 }
 
 
-
-.carousel {
-    display: flex;
-    gap: 20px;
-    transition: transform 0.3s ease;
-}
-
-.artist-card {
-    width: 270px; 
-    flex-shrink: 0;
-}
-
-
-
-.hero {
-    background-color: #f1f1f1; 
-    padding: 100px 0;
-    text-align: center;
-}
-
-
-
-.cta-btn {
-    background-color: #007bff; 
-    color: white;
-    padding: 15px 30px;
-    margin: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    display: inline-block;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.cta-btn:hover {
-    background-color: #0056b3; 
-    transform: scale(1.1); 
-}
-
-.cta-btn:focus {
-    outline: none; 
-}
-
-.menu-bar button{
+.menu-bar button {
     display: none;
 }
-span{
-    display: none;   
-}
-
-
 
 @media (max-width: 768px) {
+
     header {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    
-
-    .menu-bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
     .menu-bar button {
-        background-color: #333;
+        display: inline-block;
+        background: #333;
         color: #fff;
-        border: none;
         padding: 0.5rem 1rem;
+        border: none;
         cursor: pointer;
+        margin-left: auto;
     }
 
     nav ul {
         flex-direction: column;
         gap: 0.5rem;
-        padding: 1rem;
         background-color: #444;
-        display: none;
         width: 100%;
-        
+        padding: 1rem;
+        display: none;
     }
 
-    nav ul li {
-        text-align: center;
-        
-    }
-
-    .menu-bar.active + nav ul,
     nav ul.active {
         display: flex;
-        
     }
 
-    .featured .artist-card {
-    width: 100%;
+    .artist-card {
+        width: 200px;
     }
 
-    .collections-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
+    .carousel-container {
+        padding: 10px;
     }
-
-    .collections-grid .collection-item {
-        width: 100%; 
-    }
-
-    .hero-content {
-        text-align: center;
-        padding: 1rem;
-    }
-    .menu-bar button{
-        display:contents;
-        margin-left: auto;
-    }
-    span{
-        display:contents 
-          
-    }
-    .slider-images {
-        display: flex;
-        
-        overflow-x: auto;
-        scroll-behavior: smooth;
-        scrollbar-width: none; 
-    }
-    
 }
-
 
 @media (max-width: 480px) {
     header .logo {
@@ -307,262 +192,23 @@ span{
 
     nav ul li a {
         font-size: 0.9rem;
-        margin-left: auto;
     }
 
-    .artist-card, .collection-item {
-        width: 100%;
-    }
-    .featured .artist-card {
-        width: 50%;
-        }
-    .hero-content {
-        padding: 0.5rem;
-    }
-    .menu-bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+    .artist-card {
+        width: 150px;
     }
 
-    .menu-bar button {
-        background-color: #333;
-        color: #fff;
-        border: none;
-        padding: 0.5rem 1rem;
-        cursor: pointer;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-        padding: 1rem;
-        background-color: #444;
-        display: none;
-        width: 100%;
-        
-    }
-
-    nav ul li {
-        text-align: center;
-        
-    }
-
-    .menu-bar.active + nav ul,
-    nav ul.active {
-        display: flex;
-        
-    }
-    span.menu{
-        display: none;
-    
-    }
-    .search-bar  {
-        margin-left: auto;
-      
-      }
-      .slider-images {
-        display: flex;
-        
-        overflow-x: auto;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
-    }
-
-    }
-
-
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        background-color: #444;
-        padding: 1rem;
-        display: none; 
-    }
-
-    nav ul.active {
-        display: flex; 
-        
-    }
-
-    nav ul li {
-        margin: 10px 0; 
-    }
-    span.menu{
-        display: none;
-        margin-left: auto;
-    
-    }
-    .search-bar  {
-        margin-left: auto;
-      
-      }
-      .slider-images {
-        display: flex;
-        
-        overflow-x: auto;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
-    }
-    
-}
-
-.menu-bar button {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .menu-bar button {
-        display: inline-block;
-        background-color: #333;
-        color: #fff;
-        border: none;
-        padding: 0.5rem 1rem;
-        cursor: pointer;
-        margin-left: auto;
-    }
-    .slider-images {
-        display: flex;
-        
-        overflow-x: auto;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
-    }
-}
-.featured {
-    padding: 20px;
-    background-color: #f9f9f9;
-}
-
-.carousel-container {
-    overflow-x: auto; 
-    display: flex;
-    flex-wrap: nowrap;  
-    gap: 20px;  
-    padding: 10px 0;
-}
-
-.carousel {
-    display: flex; 
-}
-
-.artist-card {
-    width: 250px;  
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    flex-shrink: 0;  
-}
-
-.artist-card img { 
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.artist-card h3 {
-    margin: 10px 0;
-}
-
-
-
-.view-profile-btn:hover {
-    background-color: #555;
-}
-
-@media (max-width: 768px) {
     .carousel-container {
-        padding: 10px;
-    }
-
-    .artist-card {
-        width: 200px;  
-    }
-    .artist-cards {
-        width: 200px; 
+        gap: 10px;
     }
 }
 
-@media (max-width: 480px) {
-    .carousel-container {
-        gap: 10px;  
-    }
-
+@media (max-width: 375px), (max-width: 320px) {
     .artist-card {
-        width: 150px;  
+        width: 250px;
     }
-    .artist-cards {
-        width: 150px;  
-    }
-    .slider-images {
-        display: flex;
-        
-        overflow-x: auto;
-        scroll-behavior: smooth;
-        scrollbar-width: none; 
-    }
-}
- 
-.carousel-container {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; 
-    scrollbar-width: none; 
-  }
-  
-  .carousel-container::-webkit-scrollbar {
-    display: none; 
-  }
 
-  @media only screen and (max-width: 375px) {
     .artist-card img {
-        width: 100%;  
         height: auto;
-        border-radius: 8px;
-        margin-bottom: 15px;
     }
-    .artist-card {
-        width: 250px;  
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        text-align: center;
-        flex-shrink: 0;  
-    
-  }
 }
-  @media only screen and (max-width: 320px) {
-    .artist-card img {
-        width: 100%; 
-        height: auto;
-        border-radius: 8px;
-        margin-bottom: 15px;
-    }
-    .artist-card {
-        width: 250px; 
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        text-align: center;
-        flex-shrink: 0;  
-    
-  }
-}
-  
