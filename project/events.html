@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | ByTheCurator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ByTheCurator</div>
+        <div class="menu-bar">
+            <button onclick="toggleMenu()">☰</button>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <div id="upcoming-events-content" class="event-card">
+            
+        </div>
+    </section>
+
+    
+    <section class="past-events">
+        <h2>Past Events</h2>
+        <div class="past-event">
+            <h3>BTC X MWANAJPEG</h3>
+            <p>Date: September 28, 2024</p>
+            <p>Time: 11am-5pm</p>
+            <p>Location:Bloem </p>
+            <p>Description: A laid-back event full of good vibes, great chats, and chill connections. Just pure relaxation and good company!</p>
+            <div class="image-slider">
+                <button class="prev-btn">&#8249;</button>
+                <div class="slider-images">
+                    <img src="event1.jpg" alt="Event Image 1">
+                    <img src="event2.jpg" alt="Event Image 2">
+                    <img src="event3.jpg" alt="Event Image 3">
+                    <img src="event4.jpg" alt="Event Image 4">
+                    <img src="event5.jpg" alt="Event Image 5">
+                    <img src="event6.jpg" alt="Event Image 6">
+                    <img src="event7.jpg" alt="Event Image 7">
+                    <img src="event8.jpg" alt="Event Image 8">
+                    <img src="event9.jpg" alt="Event Image 9">
+                </div>
+                <button class="next-btn">&#8250;</button>
+            </div>
+            <p class="thank-you-note">Thank you to everyone who joined and supported this event!</p>
+        </div>
+    </section>
+
+    <footer>
+        
+        <div class="newsletter">
+            <a href="https://www.instagram.com/btcurator/" target="_blank">
+                <button>Follow Us On Instagram</button>
+            </a>
+        </div>
+        <p>&copy; 2024 ByTheCurator. All rights reserved.</p>
+    </footer>
+
+    <script src="events.js"></script>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

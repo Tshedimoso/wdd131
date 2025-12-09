@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | ByTheCurator</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ByTheCurator</div>
+        <div class="menu-bar">
+            
+            <button onclick="toggleMenu()">☰</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artists.html">Articles</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="about">
+        <div class="about-content">
+            <h2>About ByTheCurator</h2>
+            <p>By The Curator is a sole focus magazine for creatives, focusing on fashion, music, and arts. We take all creatives and put them in one space to showcase their work and talents. By The Curator is more of a mixed media outlet. We believe in the importance of creating a culture where creatives (curators) can express themselves and relay their thoughts and opinions without having to do their creative work. A creative hub where they can relate to their own ideas and connect to and with their audience, not only that but connect with other artists which could spring up new collaborations. This is By The Curator, welcome.</p>
+            
+        </div>
+    </section>
+
+    <footer>
+        
+        <div class="newsletter">
+            <a href="https://www.instagram.com/btcurator/" target="_blank">
+                <button>Follow Us On Instagram</button>
+            </a>
+        </div>
+        <p>&copy; 2024 ByTheCurator. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
