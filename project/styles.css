@@ -78,6 +78,11 @@ nav ul li a {
     background-color: #f9f9f9;
 }
 
+.featured h2 {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .carousel-container {
     overflow-x: auto;
     display: flex;
